@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+	 <meta charset="utf-8" />
+	 <link rel="stylesheet" type="text/css" href="login.css"></link>
+</head>
+<h:graphicImage value="img/Islamic-finance-market-image.jpg" />
+<h:form id="loginpage" style="background:img/Islamic-finance-market-image.jpg">
+<h:body   style="background-repeat:no-repeat; background-size:cover">
+<div align="center">
+<label style="font-size:300%;">LOAN LENDING APPLICATION</label>
+</div>
+
+<div align="center" class="form-group">
+<table>
+<tr>
+<h1>LOGIN PAGE</h1></tr>
+<tr>
+<td><h3>USERNAME : <h:inputText  value="#{loginController.userName}" type="text" class="form-group" id="userName" ></h:inputText>></h3></td>
+</tr>
+<tr>
+<td><h3>PASSWORD : <h:inputSecret  value="#{loginController.password}" type="text" class="form-group" id="password"></h:inputSecret>></h3></td>
+</tr>
+<tr align="center">
+<td>
+<h:commandButton  action="#{loginController.login}" type="submit"
+											class="btn btn-info"
+											value="Submit">
+											</h:commandButton>  
+		 <h:commandButton action="#{LoginController.method}" type="reset"
+											class="btn btn-info"
+											value="Reset">
+		</h:commandButton>
+</td>
+</tr>
+
+<tr>
+ <div class="login.css">
+    <td><p>Forgot your password? <a href="forgot password.html">Click here to reset it</a>.</p></td>
+  </div>
+  </tr>
+  </table>
+</div>
+
+</h:body>
+</h:form>
+	</html>
